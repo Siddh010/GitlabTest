@@ -29,6 +29,7 @@ public class SampleTest {
 		capabilities.addArguments("--remote-allow-origins=*");
 		capabilities.setAcceptInsecureCerts(true);
     driver = new RemoteWebDriver(new URL("http://selenium:4444/wd/hub"), capabilities);
+	  System.out.println("#######START SERVER ###########");
     }
   @After
   public void tearDown() {
@@ -41,6 +42,7 @@ public class SampleTest {
     driver.findElement(By.name("q")).click();
     driver.findElement(By.name("q")).sendKeys("TestNg");
     driver.findElement(By.xpath("//span[contains(.,\'testng\')]")).click();
+    System.out.println("#######OPEN Google ###########");
     {
       WebElement element = driver.findElement(By.cssSelector(".gb_d"));
       Actions builder = new Actions(driver);
