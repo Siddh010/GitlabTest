@@ -41,17 +41,17 @@ public class SampleTest {
     driver.manage().window().setSize(new Dimension(1346, 708));
     driver.findElement(By.name("q")).click();
     driver.findElement(By.name("q")).sendKeys("TestNg");
-    driver.findElement(By.xpath("//span[contains(.,\'testng\')]")).click();
-    System.out.println("#######OPEN Google ###########");
-    {
-      WebElement element = driver.findElement(By.cssSelector(".gb_d"));
-      Actions builder = new Actions(driver);
-      builder.moveToElement(element).perform();
-    }
-    {
-      WebElement element = driver.findElement(By.tagName("body"));
-      Actions builder = new Actions(driver);
-      builder.moveToElement(element, 0, 0).perform();
-    }
+    // driver.findElement(By.xpath("//span[contains(.,\'testng\')]")).click();
+    // System.out.println("#######OPEN Google ###########");
+    // {
+    //   WebElement element = driver.findElement(By.cssSelector(".gb_d"));
+    //   Actions builder = new Actions(driver);
+    //   builder.moveToElement(element).perform();
+    // }
+    // {
+    //   WebElement element = driver.findElement(By.tagName("body"));
+    //   Actions builder = new Actions(driver);
+    //   builder.moveToElement(element, 0, 0).perform();
+    // }
   }
 }
