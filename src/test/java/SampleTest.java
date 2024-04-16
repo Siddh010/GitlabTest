@@ -28,7 +28,7 @@ public class SampleTest {
 		capabilities.addArguments("--allow-running-insecure-content");
 		capabilities.addArguments("--remote-allow-origins=*");
 		capabilities.setAcceptInsecureCerts(true);
-    driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), capabilities);
+    driver = new RemoteWebDriver(new URL("http://selenium:4444/wd/hub"), capabilities);
 	  System.out.println("#######START SERVER ###########");
     }
   @After
